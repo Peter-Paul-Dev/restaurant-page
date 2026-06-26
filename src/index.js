@@ -1,2 +1,2 @@
-console.log("Boo");
-import "./styles.css"
+import "./styles.css";
+import { exportVariables } from "./generate-content.js";
