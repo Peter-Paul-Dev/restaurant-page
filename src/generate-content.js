@@ -1,7 +1,13 @@
-const contentContainer = document.querySelector("#content")
+const generateContent = (function () {
+    const contentContainer = document.querySelector("#content")
 
-const headline = document.createElement("h1"); 
-headline.textContent = "Eat here";
-contentContainer.appendChild(headline);
+    const textBox = document.createElement("div");
+    textBox.classList.add("text-box");
+    contentContainer.appendChild(textBox);
 
-export let exportVariables = {contentContainer, headline};
+    const headline = document.createElement("h1"); 
+    headline.textContent = "Eat here";
+    textBox.appendChild(headline);
+})();
+
+export let exportVariables = {contentContainer};

@@ -2,7 +2,8 @@
 
 :root {
     --styleScript: "Style Script", cursive;
-    --orange: rgb(236, 86, 17)
+    --orange: rgb(236, 86, 17);
+    --yellow: rgb(231, 229, 135);
 }
 
 * {
@@ -18,7 +19,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.7rem;
     font-family: var(--styleScript);
-    border-bottom: solid 0.2rem black;
+    border-bottom: solid 0.1rem black;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .nav-section button {
@@ -48,7 +49,29 @@ input {
 
 #content {
     background-image: url(./images/pizza-background.webp);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 91vh;
-    padding: 1rem;
-    margin-top: 0.1rem;
+}
+
+.picture-credit {
+    position: fixed;
+    left: 0.5%;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.423);
+}
+
+.picture-credit a {
+    color: white;
+}
+
+.text-box {
+    background-color: rgb(248, 245, 241);
+    height: 90vh;
+    width: 40vw;
+    border-radius: 2rem;
+    border: solid 0.3rem var(--orange);
 }
