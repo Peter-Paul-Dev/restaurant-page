@@ -2,6 +2,7 @@
 
 :root {
     --styleScript: "Style Script", cursive;
+    --orange: rgb(236, 86, 17)
 }
 
 * {
@@ -16,13 +17,13 @@ header {
     height: 9vh;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.7rem;
-    box-shadow: 0.1rem 0.4rem 0.6rem 0px rgb(146, 137, 137);
     font-family: var(--styleScript);
+    border-bottom: solid 0.2rem black;
 }
 
 h1 {
-    color: rgb(236, 86, 17);
-    font-size: 3rem;
+    color: var(--orange);
+    font-size: 2.7rem;
 }
 
 .nav-section {
@@ -43,4 +44,11 @@ input {
     height: 2rem;
     width: 30rem;
     border-radius: 1.5rem;
+}
+
+#content {
+    background-image: url(./images/pizza-background.webp);
+    height: 91vh;
+    padding: 1rem;
+    margin-top: 0.1rem;
 }
