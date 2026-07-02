@@ -14,7 +14,7 @@ const generateContent = (function () {
     textBox.appendChild(infoBox);
 
     const schedule = document.createElement("p");
-    schedule.textContent = "Schedule: Open all day week 10AM-9PM";
+    schedule.textContent = "Schedule: Open all week from 10AM-9PM";
     infoBox.appendChild(schedule);
 
     const location = document.createElement("p");
@@ -30,4 +30,4 @@ const generateContent = (function () {
     infoBox.appendChild(emailAddress);
 })();
 
-export let exportVariables = {contentContainer};
+export let exportContent = {contentContainer};
