@@ -21,15 +21,7 @@ const generateContent = (function () {
     location.textContent = "Address: #123, Pepporoni St., Dough City, United Plates Of Kitchlandia";
     infoBox.appendChild(location);
 
-    const contactNumber = document.createElement("p");
-    contactNumber.textContent = "Number: 1234567890"
-    infoBox.appendChild(contactNumber);
-
-    const emailAddress = document.createElement("p");
-    emailAddress.textContent = "Email: petersplentifulpizzaria@pizzalover.com";
-    infoBox.appendChild(emailAddress);
-
-    return contentContainer
+    return contentContainer;
 })();
 
 export let exportVariables = {contentContainer};
