@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
 :root {
     --styleScript: "Style Script", cursive;
+    --roboto: "Roboto", sans-serif;
     --orange: rgb(236, 86, 17);
-    --yellow: rgb(231, 229, 135);
+    --pottaOne: "Potta One", cursive;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--roboto);
 }
 
 header {
@@ -18,8 +22,11 @@ header {
     height: 9vh;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.7rem;
-    font-family: var(--styleScript);
     border-bottom: solid 0.1rem black;
+}
+
+header h1 {
+    font-family: var(--styleScript);
 }
 
 h1 {
@@ -48,7 +55,8 @@ input {
 }
 
 #content {
-    background-image: url(./images/pizza-background.webp);
+    background-image: url(https://media.gettyimages.com/id/2192418269/vector/seamless-pizza-slices-wallpaper-background.jpg?s=2048x2048&w=gi&k=20&c=mP6hT5xADzP7alKzUEkvSzC3bpc-AscsxTOIleaITes=);
+    background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -68,10 +76,43 @@ input {
     color: white;
 }
 
+.picture-credit a:hover {
+    text-decoration: none;
+}
+
 .text-box {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 9fr;
     background-color: rgb(248, 245, 241);
+    padding: 1rem;
     height: 90vh;
     width: 40vw;
     border-radius: 2rem;
-    border: solid 0.3rem var(--orange);
+    border: solid 0.15rem black;
+}
+
+.text-box h1 {
+    font-size: 2.3rem;
+    font-family: var(--pottaOne);
+    font-weight: 100;
+    place-self: center;
+}
+
+.info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 97%;
+    background-color: hsla(0, 0%, 0%, 0.70);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.info p {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
 }
