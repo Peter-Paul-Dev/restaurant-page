@@ -28,6 +28,8 @@ const generateContent = (function () {
     const emailAddress = document.createElement("p");
     emailAddress.textContent = "Email: petersplentifulpizzaria@pizzalover.com";
     infoBox.appendChild(emailAddress);
+
+    return contentContainer
 })();
 
-export let exportContent = {contentContainer};
+export let exportVariables = {contentContainer};
